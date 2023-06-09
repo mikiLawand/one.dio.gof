@@ -1,3 +1,5 @@
+
+import Facade.Facade;
 import Singleton.SingletonEager;
 import Singleton.SingletonLazy;
 import Singleton.SingletonLazyHolder;
@@ -47,9 +49,17 @@ public class Test {
         robo.setComportamento(agressivo);
         robo.mover();
 
+        //facade
+        //criando uma nova instancia para o facede
+        Facade facede = new Facade();
+        //migrando dados do cliente para subsistema
+        facede.migrarCliente("Tony", "14801");
+
 
     }
 }
+
+
 
 
 
